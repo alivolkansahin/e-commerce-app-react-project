@@ -1,0 +1,129 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.top-left-bar {
+    padding-left: 1.5rem;
+}
+
+.top-right-bar {
+    padding-right: 1.5rem;
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.navbar a {
+    color:#992bdac5;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeIn 0.75s ease-out forwards;
+    cursor: pointer;
+
+}
+
+.navbar a:visited {
+    color:#992bdac5;
+} 
+
+.navbar a:hover {
+    color:#FF00FF;
+    transition: 0.5s;
+}   
+
+.navbar a:active {
+    color:#0000FF;
+}  
+
+.navbar h1{
+    font-style: oblique;
+    opacity: 0;
+    animation: fadeIn 0.75s ease-out forwards;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../assets/react.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color: rgba(212, 196, 219, 0.589); */
+    padding: 1rem 5rem;
+    /* border-radius: 4%; */
+    /* color: #000000d8; */
+}
+
+.my-cart {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.my-cart img {
+    width: 1.25rem;
+}
+
+.my-cart-amount{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    background-color: red;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+
+.my-cart-amount > span {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: small;
+    font-weight: 800;
+    color: aliceblue;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+/* .cart-inner-container {
+    z-index: 100;
+    border-radius: 20px;
+    position: absolute;
+    width: 20%;
+    height: 900px;
+        background-image: linear-gradient(
+        to top,
+        #E4FFFA,
+        #B6A6E0,
+        #ecedf3,
+        #f7f4f8
+    );
+    top: 3.5rem;
+    right: -500px;
+    transition: right 0.5s ease-in-out;   
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-outer-container.show .cart-inner-container{
+    right: 5px;
+} */
+
+
+
+
+
+

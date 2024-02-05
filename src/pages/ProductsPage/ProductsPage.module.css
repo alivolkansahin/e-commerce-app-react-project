@@ -1,0 +1,10 @@
+.main{
+    background-color: aqua;
+    background-image: linear-gradient(
+        to top,
+        #E3FFF0,
+        #E3FBFF,
+        #E4FFFA,
+        #E3FFE7
+    );
+}
